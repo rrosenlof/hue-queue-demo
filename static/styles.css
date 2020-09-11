@@ -1,0 +1,114 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+  background-color: rgb(252, 255, 250);
+}
+
+.layout-row {
+  display: flex;
+}
+
+.layout-left {
+  flex: 1;
+  height: 100%;
+  width: 160px;
+  position: sticky;
+  top: 0;
+}
+
+.layout-right {
+  flex: 3;
+  margin-top: 21px;
+}
+
+.layout-right h2 {
+  margin-top: 0;
+}
+
+#layout-hr {
+  width: 80%;
+}
+
+.layout-img {
+  width: 30px;
+  float: left;
+}
+
+::selection {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+a {
+  text-shadow: none;
+}
+
+canvas {
+  /* margin: 0 30px;  */
+  border: 15px solid #030100;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 1rem;
+}
+
+.buttons button {
+  padding: 0 .25rem;
+  margin: 0 .5rem .4rem 0;
+  background-color: #fff;
+  border: 2px solid darkslategray;
+  border-radius: 4px;
+  width: 2.25rem;
+}
+
+pre {
+  padding: 1.1rem;
+  margin: 1.2rem 0 1.2rem .3rem;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+
+
+/* Hue Queue */
+.flex-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: .7rem 0!important;
+}
+
+.flex-ul > li {
+  width: 225px;
+  margin: 0 2rem 1.3rem 0;
+}
+
+.palette {
+  box-shadow: 5px 5px 9px 0px #b1a29e;
+  padding: 40px;
+}
+
+.hue-ul {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.pal-span {
+  background-color: rgba(0,0,0,.1);
+  color: #ffffff;
+  padding: 3px;
+  font-size: .5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.li-detail{
+  font-size: .7rem;
+  margin: .4rem .4rem 0 0;
+  text-align: right;
+}
+
+.li-detail p {
+  margin-bottom: 0;
+}
