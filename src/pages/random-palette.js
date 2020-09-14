@@ -38,9 +38,15 @@ export default class RandomPalette extends React.Component {
           <p>Stroke: {this.state.pal.stroke}</p>
         </div>
 
-        <p>Code here to copy to use this palette in project</p>
-        <p>import * as hq from hue-queue</p>
-        <p>const pal = hq.get('name-here')</p>
+        <p>To use this palette in a project:</p>
+        <pre>
+          <code>
+          import * as hq from hue-queue;
+          <br />< br />
+          const pal = hq.get('{this.state.pal.name}');
+          </code>
+        </pre>
+        <p></p>
       </Layout>
     )
   }

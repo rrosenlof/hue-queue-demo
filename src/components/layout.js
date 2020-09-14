@@ -1,7 +1,5 @@
 import React from "react"
 import { Link } from 'gatsby'
-import GithubIcon from '../../static/github-icon.png'
-import NpmIcon from '../../static/npm-icon.png'
 
 export default function Layout({ children }) {
   return (
@@ -14,9 +12,9 @@ export default function Layout({ children }) {
           <Link to='/random-palette'><h4>Random Palette</h4></Link>
           <Link to='/find-palette'><h4>Find A Palette</h4></Link>
           <hr id='layout-hr'/>
-          <a href='https://github.com/rrosenlof/hue-queue'><h4>GitHub Repo</h4></a>
-          <a href='https://www.npmjs.com/package/hue-queue'><h4>NPM Package</h4></a>
-          <Link to='/release-notes'><h4>Release Notes</h4></Link>
+          <a href='https://github.com/rrosenlof/hue-queue'><h5>GitHub Repo</h5></a>
+          <a href='https://www.npmjs.com/package/hue-queue'><h5>NPM Package</h5></a>
+          <Link to='/release-notes'><h5>Release Notes</h5></Link>
 
         </div>
         <div className='layout-right'>

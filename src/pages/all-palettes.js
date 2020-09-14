@@ -2,6 +2,7 @@ import React from "react"
 import '../../static/styles.css'
 import Layout from "../components/layout"
 import * as hq from 'hue-queue'
+import { Link } from 'gatsby'
 
 export default class AllPalettes extends React.Component {
   constructor() {
@@ -26,7 +27,9 @@ export default class AllPalettes extends React.Component {
           {this.state.pals
             .map(filteredPal => (
               <li key={filteredPal.name}>
-                <h4>{filteredPal.name}:</h4>
+                <div style={{ marginBottom: `.5rem` }}>
+                  <Link to={`/view-palette`} state={{ pal: filteredPal.name }}><h4>{filteredPal.name}:</h4></Link>
+                </div>
                 <div className='palette' style={{ backgroundColor: filteredPal.background }}>
                   {filteredPal.colors.map((s) => <div key={s} style={{ height: `70px`, border: `3px ${filteredPal.stroke} solid`, margin: `12px 0`, backgroundColor: s, position: 'relative', }}><span className='pal-span'>{s}</span></div>)}
                 </div>

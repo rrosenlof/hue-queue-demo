@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 pre {
   padding: 1.1rem;
-  margin: 1.2rem 0 1.2rem .3rem;
+  margin: 0 0 1.2rem .3rem;
   background: rgba(0, 0, 0, 0.04);
 }
 
@@ -111,4 +111,9 @@ pre {
 
 .li-detail p {
   margin-bottom: 0;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap   
 }
