@@ -2,7 +2,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.2rem;
-  background-color: rgb(252, 255, 250);
+  background-color: #fcfffa;
 }
 
 .layout-row {
@@ -20,6 +20,7 @@ body {
 .layout-right {
   flex: 3;
   margin-top: 21px;
+  margin-left: 15px
 }
 
 .layout-right h2 {
@@ -97,10 +98,16 @@ pre {
   background-color: rgba(0,0,0,.1);
   color: #ffffff;
   padding: 3px;
-  font-size: .5rem;
+  font-size: .6rem;
   position: absolute;
   top: 0;
   right: 0;
+  font-family: 'Consolas', monospace;
+}
+
+.pal-span-sub {
+  font-size: .6rem;
+  font-family: 'Consolas', monospace;
 }
 
 .li-detail{
