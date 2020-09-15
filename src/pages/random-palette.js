@@ -34,8 +34,8 @@ export default class RandomPalette extends React.Component {
           {this.state.pal.colors.map((s) => <div key={s} style={{ height: `70px`, border: `3px ${this.state.pal.stroke} solid`, margin: `12px 0`, backgroundColor: s, position: 'relative', }}><span className='pal-span'>{s}</span></div>)}
         </div>
         <div className='li-detail'>
-          <p >Background: {this.state.pal.background}</p>
-          <p>Stroke: {this.state.pal.stroke}</p>
+          <p>Background: <span className='pal-span-sub'>{this.state.pal.background}</span></p>
+          <p>Stroke: <span className='pal-span-sub'>{this.state.pal.stroke}</span></p>
         </div>
 
         <p>To use this palette in a project:</p>

@@ -34,7 +34,7 @@ export default class AllPalettes extends React.Component {
                   {filteredPal.colors.map((s) => <div key={s} style={{ height: `70px`, border: `3px ${filteredPal.stroke} solid`, margin: `12px 0`, backgroundColor: s, position: 'relative', }}><span className='pal-span'>{s}</span></div>)}
                 </div>
                 <div className='li-detail'>
-                  <p >Background: <span className='pal-span-sub'>{filteredPal.background}</span></p>
+                  <p>Background: <span className='pal-span-sub'>{filteredPal.background}</span></p>
                   <p>Stroke: <span className='pal-span-sub'>{filteredPal.stroke}</span></p>
                 </div>
               </li>
